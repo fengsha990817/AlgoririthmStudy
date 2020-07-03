@@ -5,7 +5,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Sorts {
+public class HeapSort {
     public static void main(String[] args) {
         Random random = new Random();
         int[] input = new int[10];
