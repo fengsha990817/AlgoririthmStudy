@@ -1,5 +1,6 @@
 package com.algorithm;
 
+import com.algorithm.utils.GetRandomArray;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
@@ -7,11 +8,12 @@ import java.util.Random;
 
 public class HeapSort {
     public static void main(String[] args) {
-        Random random = new Random();
+        /*Random random = new Random();
         int[] input = new int[10];
         for (int i = 1; i < 10; i++) {
             input[i] = random.nextInt(999);
-        }
+        }*/
+        int[] input = GetRandomArray.getArray(100000);
         int[] answer = input;
         Arrays.sort(answer);//答案
 
