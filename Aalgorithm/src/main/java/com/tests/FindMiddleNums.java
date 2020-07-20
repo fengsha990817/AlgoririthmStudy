@@ -39,7 +39,7 @@ public class FindMiddleNums {
         }
         StringBuilder builder = new StringBuilder();
         for (int out:list){
-            builder.append(out+",");
+            builder.append(out).append(",");
         }
         builder.deleteCharAt(builder.length()-1);
         System.out.println(builder.toString());
