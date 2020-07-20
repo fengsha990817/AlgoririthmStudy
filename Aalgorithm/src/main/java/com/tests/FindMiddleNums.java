@@ -3,6 +3,11 @@ package com.tests;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 寻找数组中的中位数：给定一整数数组，找出其中所有的中位数。
+ * 此处的中位数指：
+ *          该数大于其左侧的所有数，小于其右侧的所有数
+ */
 public class FindMiddleNums {
     public static void main(String[] args) {
         FindMiddleNums unit = new FindMiddleNums();
