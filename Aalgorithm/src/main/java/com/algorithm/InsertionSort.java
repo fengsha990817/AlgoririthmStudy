@@ -6,9 +6,20 @@ import java.util.Arrays;
 
 public class InsertionSort {
     public static void main(String[] args) {
-        int[] input = GetRandomArray.getArray(10);
+        int[] input = GetRandomArray.getArray(10000);
+        int[] compare = Arrays.copyOf(input,input.length);
+        System.out.println(Arrays.equals(input, compare));
+        long first = System.currentTimeMillis();
         sortNew(input);
-        System.out.println(Arrays.toString(input));
+        long second = System.currentTimeMillis();
+        System.out.println(second-first);
+        first = System.currentTimeMillis();
+        sort(compare);
+        second = System.currentTimeMillis();
+        System.out.println(second-first);
+
+
+        //System.out.println(Arrays.toString(input));
     }
     public static void sort(int[] input){//标准的插入排序
         int n = input.length;
