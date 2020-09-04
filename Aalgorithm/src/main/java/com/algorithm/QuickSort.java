@@ -1,10 +1,7 @@
 package com.algorithm;
 
-import com.algorithm.utils.GetRandomArray;
-import org.jetbrains.annotations.NotNull;
-
 public class QuickSort {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         @NotNull int[] input = GetRandomArray.getArray(10);
         quickSort(input, 1, input.length-1);
 
@@ -49,7 +46,7 @@ public class QuickSort {
         quickSort(arr, low, j-1);
         //递归调用右半数组
         quickSort(arr, j+1, high);
-    }
+    }*/
 
 }
 
